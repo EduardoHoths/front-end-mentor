@@ -40,7 +40,7 @@ main{
 main > .img {
     width: 310px;
     height: 310px;
-    background: url(/images/image-equilibrium.jpg) no-repeat ;
+    background: url(../images/image-equilibrium.jpg) no-repeat ;
     background-size: cover;
     margin: 20px 0;
     border-radius: 10px;
@@ -51,7 +51,7 @@ main > .img {
     cursor: pointer;
 }
  main > .img:hover:before{
-    content: url(/images/icon-view.svg);
+    content: url(../images/icon-view.svg);
     position: absolute;
     top: 0;
     left: 0;
