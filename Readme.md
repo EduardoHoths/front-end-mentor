@@ -9,3 +9,8 @@ Repositório destinado para armazenar os projetos feitos no Front-end Mentor
 
 - [Base Apparel Coming Soon](https://github.com/EduardoHoths/front-end-mentor/tree/master/base-apparel-coming-soon)
 <img src='https://cdn.discordapp.com/attachments/920032936823238658/934129233410785310/unknown.png' width='200px'>
+
+<br>
+
+- [Article Preview Component](https://github.com/EduardoHoths/front-end-mentor/tree/master/article-preview-component)
+<img src='https://cdn.discordapp.com/attachments/920032936823238658/935614754058293308/unknown.png' width='200'>
