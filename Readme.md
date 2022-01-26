@@ -13,4 +13,9 @@ Repositório destinado para armazenar os projetos feitos no Front-end Mentor
 <br>
 
 - [Article Preview Component](https://github.com/EduardoHoths/front-end-mentor/tree/master/article-preview-component)
-<img src='https://cdn.discordapp.com/attachments/920032936823238658/935614754058293308/unknown.png' width='200'>
+<img src='https://cdn.discordapp.com/attachments/920032936823238658/935614754058293308/unknown.png' width='200px'>
+
+<br>
+
+- [FAQ Accordion Card](https://github.com/EduardoHoths/front-end-mentor/tree/master/faq-accordion-card)
+<img src='https://cdn.discordapp.com/attachments/920032936823238658/935978430204375060/unknown.png' width='200px'>
