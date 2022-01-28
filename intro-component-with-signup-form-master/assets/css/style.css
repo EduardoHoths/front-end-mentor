@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 16px;
+    background: var(--red) url('../images/bg-intro-desktop.png');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main */
+main {
+    width: 1440px;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+/* left side*/
+
+#left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left h1 {
+    color: white;
+    font-size: 3em;
+    max-width: 500px;
+    line-height: 1em;
+    margin: 20px auto;
+}
+
+#left p {
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* right side */
+#right {
+    grid-area: right;
+}
+
+#right aside {
+    text-align: center;
+    background: var(--blue);
+    color: var(--GrayishBlue);
+    line-height: 3.5em;
+    border-radius: 10px;
+    box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.123);
+    margin: 50px auto ;
+    max-width: 500px;
+}
+
+#right aside span {
+    color: white;
+    font-weight: bold;
+}
+
+/* form */
+#right form {
+    background: white;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px 0;
+    box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.144);
+}
+#right form div {
+    position: relative;
+}
+#right form .input small {
+    display: none;
+    text-align: right;
+    color: var(--red);
+    font-style: italic;
+    float: right;
+    margin: -10px 25px 10px 0;
+}
+#right div.error small {
+    display: unset;
+}
+
+div.input input {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    line-height: 3.5em;
+    padding: 0 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+div.error input {    
+    background: url('../images/icon-error.svg') no-repeat right 20px center;
+    border: 2px solid var(--red);
+}
+input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.376);
+}
+
+div.input input::-webkit-input-placeholder {
+    font-weight: bold;
+}
+div.error #email::-webkit-input-placeholder{
+    color: var(--red);
+    
+}
+
+#right form button {
+    display: block;
+    width: 90%;
+    line-height: 3.5em;
+    background: var(--green);
+    border-top: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.178);
+    border-left: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+#right form button:hover {
+    opacity: .7;
+}
+
+footer p {
+    color: var(--GrayishBlue);
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#right p a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#right p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    body{
+        align-items: flex-start;
+    }
+    main {
+        grid-template-areas: 
+                            'left ' 
+                            'right ';
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+        font-size: 0.8em;
+    }    
+    #left{
+        margin: 0;
+        text-align: center;
+    }
+    
+    #right{
+        margin:0 0 10px 0;              
+    }
+    #right aside{
+        margin: 10px auto ;
+    }
+    #right form{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 520px){    
+    #right aside{
+        margin: 10px 10px ;
+    }
+    #right form{
+        margin: 0 10px;
+    }
+}
+@media (max-width: 320px){
+    main{
+        font-size: 0.75em;
+        grid-template-rows: 40% 60%;
+    }
+    #left h1{
+        font-size: 2.6em;
+    }
+}
