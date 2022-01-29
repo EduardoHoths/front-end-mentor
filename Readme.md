@@ -26,3 +26,8 @@ Repositório destinado para armazenar os projetos feitos no Front-end Mentor
 
 - [Intro Component With Sign up Form Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/intro-component-with-signup-form-master)
 <img src='https://cdn.discordapp.com/attachments/920032936823238658/936622461351505960/unknown.png' width='200px'>
+
+<br>
+
+- [Ping Coming Soon Page Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/ping-coming-soon-page-master)
+<img src='https://cdn.discordapp.com/attachments/920032936823238658/937002077161390190/unknown.png' width='200px'>
