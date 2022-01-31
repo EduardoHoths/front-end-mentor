@@ -31,3 +31,8 @@ Repositório destinado para armazenar os projetos feitos no Front-end Mentor
 
 - [Ping Coming Soon Page Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/ping-coming-soon-page-master)
 <img src='https://cdn.discordapp.com/attachments/920032936823238658/937002077161390190/unknown.png' width='200px'>
+
+<br>
+
+- [Social Proof Section Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/social-proof-section-master)
+<img src='https://cdn.discordapp.com/attachments/920032936823238658/937766740564254730/unknown.png' width='200px'>
