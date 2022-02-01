@@ -36,3 +36,8 @@ Repositório destinado para armazenar os projetos feitos no Front-end Mentor
 
 - [Social Proof Section Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/social-proof-section-master)
 <img src='https://cdn.discordapp.com/attachments/920032936823238658/937766740564254730/unknown.png' width='200px'>
+
+<br>
+
+- [Stats Preview Card Component Main](https://github.com/EduardoHoths/front-end-mentor/tree/master/stats-preview-card-component-main)
+<img src='https://cdn.discordapp.com/attachments/920032936823238658/938183483380076574/unknown.png' width='200px'>
