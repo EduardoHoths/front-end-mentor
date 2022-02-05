@@ -51,3 +51,7 @@ Repositório destinado para armazenar os projetos feitos no Front-end Mentor
 
 - [Huddle Landing Page With Single Introductory Section Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/huddle-landing-page-with-single-introductory-section-master)
 <img src='https://cdn.discordapp.com/attachments/920032936823238658/939227754556178522/unknown.png' width='200px'>
+
+<br>
+
+- [Four Card Feature Section Master](https://github.com/EduardoHoths/front-end-mentor/tree/master/four-card-feature-section-master)
