@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+$Blue: hsl(246, 80%, 60%);
+$work: hsl(15, 100%, 70%);
+$play: hsl(195, 74%, 62%);
+$study: hsl(348, 100%, 68%);
+$exercise: hsl(145, 58%, 55%);
+$social: hsl(264, 64%, 52%);
+$selfCare: hsl(43, 84%, 65%);
+
+// Neutral
+
+$Verydarkblue: hsl(226, 43%, 10%);
+$Darkblue: hsl(235, 46%, 20%);
+$Desaturatedblue: hsl(235, 45%, 61%);
+$Palelue: hsl(236, 100%, 87%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: $Verydarkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas:
+        "author work play study"
+        "author exercise social selfCare";
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+}
+section {
+    border-radius: 10px;
+    background-color: $Darkblue;
+    margin: 10px;
+}
+.author {
+    grid-area: author;
+
+    .report {
+        background-color: $Blue;
+        padding: 30px;
+        height: 300px;
+        border-radius: 10px;
+        img {
+            width: 40%;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: block;
+            margin-bottom: 30px;
+        }
+        small {
+            color: $Palelue;
+        }
+        h1 {
+            color: white;
+            font-weight: lighter;
+            font-size: 2em;
+        }
+    }
+    .buttons {
+        padding: 30px;
+
+        button {
+            all: unset;
+            display: block;
+            color: $Desaturatedblue;
+            font-size: 0.9em;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: 0.4s;
+
+            &:hover {
+                color: white;
+            }
+        }
+        .active {
+            color: white;
+        }
+    }
+}
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: white;
+    font-weight: normal;
+
+    img {
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            filter: invert(0%) sepia(98%) saturate(8%) hue-rotate(158deg) brightness(103%) contrast(102%);
+        }
+    }
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px 10px 15px 15px;
+
+    .container {
+        padding: 20px;
+        background-color: $Darkblue;
+        border-radius: 10px;
+        height: 190px;
+        transition: 0.4s;
+    }
+
+    .container:hover {
+        $Blue: #2c306bfd;
+        background-color: $Blue;
+        cursor: pointer;
+    }
+}
+.current {
+    font-size: 3em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+.previous {
+    color: $Desaturatedblue;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.work {
+    grid-area: work;
+
+    background: url("../images/icon-work.svg") no-repeat top -10px right 10px;
+    background-size: 25%;
+    background-color: $work;
+}
+.play {
+    grid-area: play;
+
+    background: url("../images/icon-play.svg") no-repeat top -10px right 10px;
+    background-color: $play;
+    background-size: 25%;
+}
+.study {
+    grid-area: study;
+
+    background: url("../images/icon-study.svg") no-repeat top -10px right 10px;
+    background-color: $study;
+    background-size: 25%;
+}
+.exercise {
+    grid-area: exercise;
+
+    background: url("../images/icon-exercise.svg") no-repeat top right 10px;
+    background-color: $exercise;
+    background-size: 25%;
+}
+.social {
+    grid-area: social;
+
+    background: url("../images/icon-social.svg") no-repeat top -10px right 10px;
+    background-color: $social;
+    background-size: 25%;
+}
+.self-care {
+    grid-area: selfCare;
+
+    background: url("../images/icon-self-care.svg") no-repeat top -10px right 10px;
+    background-color: $selfCare;
+    background-size: 25%;
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: unset;
+    }
+    main {
+        display: block;
+        height: unset;
+        max-width: 400px;
+    }
+    .author{
+        height: 180px;
+        margin: 10px 20px;
+
+        .report {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: 120px;
+            padding: 20px;
+
+            img {
+                width: 80px;
+                margin: 0;
+            }            
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+    }
+    .work, .play, .study, .exercise, .social, .self-care{
+        height: 230px;
+        margin: 10px 20px;
+        background-size: 20%;
+    }
+    
+}
